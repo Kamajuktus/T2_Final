@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Design your model S</title>
+  <!-- Link Icon -->
+  <link rel="icon" href="assets/logo.png">
+  <!-- Ubuntu Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <!-- Font-awesome -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/000e555006.js" crossorigin="anonymous"></script>
+  <!-- JQuery Connection -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- Bootstrap connection -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- Css connection -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/purchase.css">
+</head>
+
+<!-- Nav menu -->
+
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/tesla-transparent-logo-17.png" alt="" width="120" height="130">
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="row">
+    <!-- Car preview image  -->
+    <div class="col-md-12 col-lg-9 car-div">
+      <img src="assets/purchase/teslaSWhite.jpg" class="car-image" alt="Front View">
+    </div>
+
+    <!-- Options menu -->
+    <div class="col-md-12 col-lg-3 options-div">
+      <div class="alert alert-light ">
+        <i class="fas fa-exclamation-circle fa-cog"></i> $1,500 Clean Fuel Reward is now available for California residents.
+      </div>
+      <h1>Model S</h1>
+      <p>Estimated Delivery: 4-11 weeks</p>
+
+      <!-- Stats -->
+      <div class="row stats">
+        <div class="col-md-4 col-lg-12 col-xl-4">
+          <h4 id="range">412mi</h4>
+          <p>Range</p>
+        </div>
+        <div class="col-md-4 col-lg-12 col-xl-4">
+          <h4 id="speed">155mph</h4>
+          <p>Top Speed</p>
+        </div>
+        <div class="col-md-4 col-lg-12 col-xl-4">
+          <h4 id="acceleration">3.1sec</h4>
+          <p>0-60mph</p>
+        </div>
+      </div>
+
+      <!-- Base option -->
+      <h5 class="padding-top">Dual Motor All-Wheel Drive:</h5>
+      <button type="button" id="first-option" onclick="changeToFirstOption()" class="btn btn-light col-12 pressed">Long Range $79,990</button>
+      <h5 class="padding-top">Tri Motor All-Wheel Drive:</h5>
+      <button type="button" id="second-option" onclick="changeToSecondOption()" class="btn btn-light col-12">PLAID $119,990</button>
+      <button type="button" id="third-option" onclick="changeToThirdOption()" class="btn btn-light col-12">PLAID+ $149,990</button>
+
+
+      <!-- Upgrades list -->
+      <div class="margin-top">
+        <h2 id="up-title">PLAID Upgrades</h2>
+        <p id="up-subtitle">Included</p>
+        <ul class="up-list">
+          <li id="up-one">Quickest accelerating car in production today</li>
+          <li id="up-two">0-60 mph: 1.99s</li>
+          <li id="up-three">1/4 mile: 9.23@155 mph trap speed</li>
+          <li id="up-four">1,020 horsepower</li>
+          <li id="up-five">Three high performance motors with carbon rotors</li>
+          <li id="up-six">Torque vectoring</li>
+        </ul>
+      </div>
+
+      <!-- Paint option -->
+      <div class="margin-top">
+        <h2>Paint</h2>
+        <div class="padding-top-bottom">
+          <button type="button" name="button" class="colorpick-button pressed" id="white-paint"> <img src="assets/purchase/Paint_White.png" class="colorpick"></button>
+          <button type="button" name="button" class="colorpick-button" id="black-paint"> <img src="assets/purchase/Paint_Black.png" class="colorpick"></button>
+          <button type="button" name="button" class="colorpick-button" id="red-paint"> <img src="assets/purchase/Paint_Red.png" class="colorpick"></button>
+        </div>
+        <h6 id="paint-name">Pearl White Multi-Coat</h6>
+        <p id="paint-price">Included</p>
+      </div>
+
+      <!-- Total price -->
+      <div class="margin-top">
+        <h2>Total Price</h2>
+        <p id="total-price">$79,990</p>
+      </div>
+
+      <!-- Button to payment page -->
+      <form action="Link to Payment Page">
+        <input type="submit" value="Proceed to payment" class="btn btn-primary margin-top margin-bottom" />
+      </form>
+
+      </div>
+    </div>
+</section>
+
+<!-- JS connection -->
+<script src="js/purchase.js"></script>
