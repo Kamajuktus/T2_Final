@@ -1,0 +1,207 @@
+/* Hide scrollbar but allow scrolling */
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* Header */
+.header {
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-weight: 700;
+}
+
+/* Nav */
+.nav {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.nav__link {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 30px;
+  position: relative;
+
+  color: #333;
+  text-decoration: none;
+
+  transition: color 0.2s linear;
+}
+
+.nav__link:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  display: none;
+
+  background-color: #9B8F8F;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.nav__link:hover {
+   color: #9B8F8F;
+}
+
+.nav__link:hover:after {
+   color: #9B8F8F;
+   display: block;
+}
+
+.logo {
+  margin-top: -2.5%;
+}
+
+/* Section */
+
+section {
+  width: 100%;
+  padding: 0 7%;
+  display: table;
+  max-width: none;
+  height: 100vh;
+}
+
+/* General model */
+
+.model__inner {
+
+  width: 100%;
+  max-width: 880px;
+  margin: 10% auto;
+}
+
+.model__title {
+  font-weight: 600;
+  text-align: center;
+}
+
+.model__subtitle {
+  text-align: center;
+}
+
+/* Model s */
+.model_s {
+  background: url("../assets/ms-homepage-desktop.jpg") center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Model Y */
+.model_y {
+  background: url("../assets/Desktop-ModelY.jpg") center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Model 3 */
+
+.model_3 {
+  background: url("../assets/m3-homepage-desktop.jpg") center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Model x */
+
+.model_x {
+  background: url("../assets/mx-homepage-desktop.jpg") center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Footer */
+
+.main_container {
+  position: relative;
+  text-align: center;
+}
+
+.footer {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer a{
+  color: #B0B0B0;
+}
+
+/* Buttons */
+
+.button {
+  display: inline-block;
+  border-radius: 150px;
+  background-color: #211C27;
+
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px;
+  width: 250px;
+  transition: all 0.5s;
+}
+
+.button_order {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+/* Media  */
+
+@media (max-width: 800px) {
+  .nav__link {
+    margin: 0 10px;
+  }
+  .model__inner {
+    margin: 20% auto;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1280px) {
+  .nav__link {
+    margin: 0 15px;
+  }
+  .model__inner {
+    margin: 15% auto;
+  }
+}
