@@ -124,7 +124,7 @@ document.getElementById('red-paint').addEventListener("click", function() {
   calculateTotalPrice();
 });
 
-document.addEventListener("scroll", () => {
+document.addEventListener("scroll", function() {
   const currentScroll = window.pageYOffset;
   if (window.innerWidth <= 1200) {
     if (currentScroll <= checkpoint) {
