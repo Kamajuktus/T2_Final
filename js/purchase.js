@@ -68,7 +68,7 @@ function changeToThirdOption() {
   $('#up-title').text("PLAID+ Upgrades");
   $('#up-subtitle').text("Includes");
   $('#up-one').text("Quickest 0-60 mph and 1/4 mile acceleration of any production car ever");
-  $('#up-two').text("1,100+ horsepower");
+  $('#up-two').text("0-60 mph: <1.99s");
   $('#up-three').text("1/4 mile: <9.0s");
   $('#up-four').text("1,100+ horsepower");
   $('#up-five').text("Three high performance motors with carbon rotors");
@@ -124,7 +124,7 @@ document.getElementById('red-paint').addEventListener("click", function() {
   calculateTotalPrice();
 });
 
-window.addEventListener("scroll", () => {
+document.addEventListener("scroll", () => {
   const currentScroll = window.pageYOffset;
   if (window.innerWidth <= 1200) {
     if (currentScroll <= checkpoint) {
@@ -132,6 +132,9 @@ window.addEventListener("scroll", () => {
     } else {
       opacity = 0;
     }
+    document.querySelector(".header__inner").style.opacity = opacity;
+  } else {
+    opacity = 1;
     document.querySelector(".header__inner").style.opacity = opacity;
   }
 });
